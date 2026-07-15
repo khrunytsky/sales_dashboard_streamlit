@@ -100,7 +100,7 @@ with row1_col1:
         margin=dict(l=20, r=20, t=20, b=20),
         legend=dict(orientation="h", yanchor="bottom", y=1.02, xanchor="right", x=1)
     )
-    st.plotly_chart(fig_line, width='content')
+    st.plotly_chart(fig_line)
 
 with row1_col2:
     st.subheader("Udział Metod Sprzedaży")
@@ -117,7 +117,7 @@ with row1_col2:
         showlegend=False,
         margin=dict(l=20, r=20, t=20, b=20)
     )
-    st.plotly_chart(fig_donut, width='content')
+    st.plotly_chart(fig_donut)
 
 "---"
 
@@ -177,7 +177,7 @@ with row3_col1:
         xaxis_title="Przychód w mln USD", yaxis_title="",
         margin=dict(l=20, r=20, t=20, b=20)
     )
-    st.plotly_chart(fig_bar_prod, width='content')
+    st.plotly_chart(fig_bar_prod)
 
 with row3_col2:
     st.subheader("Przychody wg Regionów")
@@ -196,4 +196,4 @@ with row3_col2:
         xaxis_title="Region", yaxis_title="Przychód w mln USD",
         margin=dict(l=20, r=20, t=20, b=20)
     )
-    st.plotly_chart(fig_bar_reg, width='content')
+    st.plotly_chart(fig_bar_reg)
